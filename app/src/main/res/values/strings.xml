@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">Lodgers</string>
     <string name="login">Login</string>
+    <string name="continue_as_guest">Continue as guest</string>
+
+    <string name="facebook_app_id">969679461052784</string>
+    <string name="fb_login_protocol_scheme">fb969679461052784</string>
+    <string name="facebook_client_token">ce7469df366970df2c1a49d604c55edd</string>
+
+<!--    56789-->
+    <!--    request the id token for which user sign in in app-->
+    <string name="webclient">247414872987-ejv7ckp5q5boe9mnthsmg5onhci740m5.apps.googleusercontent.com</string>
 </resources>

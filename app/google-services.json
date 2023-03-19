@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "247414872987",
+    "project_id": "lodgers-e609c",
+    "storage_bucket": "lodgers-e609c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:247414872987:android:5570af6ea76844f4241f3e",
+        "android_client_info": {
+          "package_name": "com.example.lodgers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "247414872987-ejv7ckp5q5boe9mnthsmg5onhci740m5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGhGiApzoZcA65zuKzUSsu8_IqUCHYmko"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "247414872987-ejv7ckp5q5boe9mnthsmg5onhci740m5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
