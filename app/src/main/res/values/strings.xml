@@ -10,4 +10,16 @@
 <!--    56789-->
     <!--    request the id token for which user sign in in app-->
     <string name="webclient">247414872987-ejv7ckp5q5boe9mnthsmg5onhci740m5.apps.googleusercontent.com</string>
+    <string name="enter_the_email_associated_with_your_account_and_we_ll_send_an_email_with_OTP_to_reset_your_password">Enter the email associated with your account and we’’ll send an email with OTP to reset your password</string>
+    <string name="enter_the_email_associated_with_your_account_and_we_ll_send_an_email_with_otp_to_reset_your_password">Enter the email associated with your account and we’’ll send an email with OTP to reset your password</string>
+    <string name="please_enter_4_difit_code_sent_to_your_email_mobile_no">Please enter 4 difit code sent to your Email / Mobile No.</string>
+    <string name="please_enter_4_digit_code_sent_to_your_email_mobile_no">please enter 4 digit code sent to your email mobile no</string>
+    <string name="resend">Resend</string>
+
+    <string-array name="Genders">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Lesbian</item>
+        <item>Gay</item>
+    </string-array>
 </resources>

@@ -22,12 +22,29 @@
         <activity android:name=".LoginPage">
 
         </activity>
+        <activity android:name=".Preferencespage">
+
+        </activity>
+        <activity android:name=".Sign_up">
+
+        </activity>
+        <activity android:name=".Forget_Password_page">
+
+        </activity>
+
+        <activity android:name=".Verify_OTP">
+
+        </activity>
+
+        <activity android:name=".Otp_Create_password">
+
+        </activity>
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

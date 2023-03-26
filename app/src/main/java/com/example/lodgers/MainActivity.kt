@@ -1,32 +1,76 @@
 package com.example.lodgers
 
 import android.content.Intent
-import android.content.pm.PackageManager
-import android.content.pm.Signature
 import android.os.Bundle
-import android.util.Log
-import android.util.Base64
+import android.widget.Button
+import android.widget.TextView
 
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_main.*
-import java.security.MessageDigest
-import java.security.NoSuchAlgorithmException
-import java.util.*
 
 
 class MainActivity : AppCompatActivity() {
+
+    lateinit var ContinueAsGuest: TextView
+    lateinit var Login: Button
+    lateinit var Sign_Up: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        login_1.setOnClickListener{
-            Intent(this,LoginPage::class.java).also {
+
+//        init()
+        //Login page
+
+
+        Login = findViewById(R.id.login_1)
+        Sign_Up = findViewById(R.id.signUp_Button)
+
+
+        Login.setOnClickListener {
+            Intent(this, LoginPage::class.java).also {
                 startActivity(it)
+//            val intent = Intent(this@MainActivity, LoginPage::class.java)
+//            var count: Int = 0
+//            val timer = Timer()
+//
+//            timer.schedule(object : TimerTask() {
+//                override fun run() {
+//                    count++
+//                    progress_bar_1.progress = count
+//
+//                    if (count > 100) {
+//                        timer.cancel()
+//                        startActivity(intent)
+//                        finish()
+//                    }
+//
+//                }
+//            }, 0, 100)
+//             mProgressBar.visibility = View.INVISIBLE
             }
         }
 
+            Sign_Up.setOnClickListener {
 
+                Intent(this, Sign_up::class.java).also {
+                    startActivity(it)
+
+                }
+            }
+
+            //Sign Up page
+
+
+            ContinueAsGuest = findViewById(R.id.ContinueAsGuest)  // Clickable textview
+            ContinueAsGuest.setOnClickListener {
+                startActivity(Intent(this@MainActivity, Preferencespage::class.java))
+            }
     }
-
-
 }
+
+
+//    private fun init() {
+//        mProgressBar = findViewById(R.id.progress_bar_1)
+//        mProgressBar.visibility = View.INVISIBLE
+//    }
+

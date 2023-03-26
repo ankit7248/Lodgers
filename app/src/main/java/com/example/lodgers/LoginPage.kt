@@ -1,26 +1,51 @@
 package com.example.lodgers
+
+
+
 import android.content.Intent
+
 import android.os.Bundle
 
+import android.widget.TextView
+
 import android.widget.Toast
+
 import androidx.appcompat.app.AppCompatActivity
+
 import com.facebook.AccessToken
+
 import com.facebook.CallbackManager
+
 import com.facebook.FacebookCallback
+
 import com.facebook.FacebookException
+
+
 import com.facebook.login.LoginResult
+
+
 import com.google.android.gms.auth.api.signin.GoogleSignIn
+
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
+
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 
 import com.google.firebase.auth.FacebookAuthProvider
+
 import com.google.firebase.auth.FirebaseAuth
+
 import com.google.firebase.auth.GoogleAuthProvider
+
 import kotlinx.android.synthetic.main.login_page.*
+
 import kotlinx.coroutines.CoroutineScope
+
 import kotlinx.coroutines.Dispatchers
+
 import kotlinx.coroutines.launch
+
 import kotlinx.coroutines.tasks.await
+
 import kotlinx.coroutines.withContext
 
 
@@ -31,10 +56,24 @@ var callbackManager: CallbackManager? = null
 
     // Login page
 
+
 class LoginPage : AppCompatActivity(){
+
+    lateinit var ContinueAsGuest_1: TextView
+    lateinit var Forget_Password_page_1 : TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.login_page)
+
+        ContinueAsGuest_1 = findViewById(R.id.ContinueAsGuest_1)
+        ContinueAsGuest_1.setOnClickListener {
+            startActivity(Intent(this@LoginPage, Preferencespage::class.java))
+        }
+
+        Forget_Password_page_1 = findViewById(R.id.Forget_Password)
+        Forget_Password_page_1.setOnClickListener {
+            startActivity(Intent(this@LoginPage, Forget_Password_page::class.java))
+        }
 
 
         auth = FirebaseAuth.getInstance()
@@ -43,12 +82,14 @@ class LoginPage : AppCompatActivity(){
 
         login_facebook_button.setReadPermissions("email")
         login_facebook_button.setOnClickListener {
+
             FacebookSignIn()
         }
 
         login_2.setOnClickListener{
             LoginUser()
         }
+
 
         // Google Page
 
@@ -58,9 +99,41 @@ class LoginPage : AppCompatActivity(){
                 .requestEmail()
                 .requestIdToken(getString(R.string.webclient))
                 .build()
-            val signInClient = GoogleSignIn.getClient(this,options)
-            signInClient.signInIntent.also {
+                val signInClient = GoogleSignIn.getClient(this,options)
+                 signInClient.signInIntent.also {
                 startActivityForResult(it, REQUEST_CODE_SIGN_IN)
+            }
+        }
+    }
+
+    // Google Page
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+
+        callbackManager!!.onActivityResult(requestCode,resultCode,data)
+
+        if (requestCode == REQUEST_CODE_SIGN_IN){
+            val account = GoogleSignIn.getSignedInAccountFromIntent(data).result
+            account?.let{ // Account check itS null or not
+                googleAuthForFirebase(it)  // we are connecting googleSignIn with firebase
+            }
+        }
+    }
+
+    private fun googleAuthForFirebase(account: GoogleSignInAccount){
+        val credentials = GoogleAuthProvider.getCredential(account.idToken,null)
+        CoroutineScope(Dispatchers.IO).launch {
+            try {
+                auth.signInWithCredential(credentials).await()
+                withContext(Dispatchers.Main){
+                    Toast.makeText(this@LoginPage,"Successfully logged in", Toast.LENGTH_SHORT).show()
+                    startActivity(Intent(this@LoginPage, Preferencespage::class.java))
+                }
+            }catch (e: Exception){
+                withContext(Dispatchers.Main){
+                    Toast.makeText(this@LoginPage,e.message, Toast.LENGTH_SHORT).show()
+                }
             }
         }
     }
@@ -80,6 +153,8 @@ class LoginPage : AppCompatActivity(){
 
                 override fun onSuccess(result: LoginResult) {
                     handleFacebookAccessToken(result.accessToken)
+                    val intent = Intent(this@LoginPage,Preferencespage::class.java)
+                    startActivity(intent)
                 }
 
             })
@@ -91,11 +166,11 @@ class LoginPage : AppCompatActivity(){
         val credential = FacebookAuthProvider.getCredential(accessToken.token)
         auth.signInWithCredential(credential)
             .addOnFailureListener{
-                e-> Toast.makeText(this,e.message,Toast.LENGTH_SHORT).show()
+//                e-> Toast.makeText(this,e.message,Toast.LENGTH_SHORT).show()
             }
             .addOnSuccessListener {   result ->
                 val email: String? = result.user?.email
-                Toast.makeText(this,"You logged with email" +email,Toast.LENGTH_SHORT).show()
+//                Toast.makeText(this,"You logged with email" +email,Toast.LENGTH_SHORT).show()
             }
 
     }
@@ -113,6 +188,7 @@ class LoginPage : AppCompatActivity(){
                     auth.signInWithEmailAndPassword(emails,password).await()
                     withContext(Dispatchers.Main){
                         checkLoggerInstate()
+                        startActivity(Intent(this@LoginPage, Preferencespage::class.java))
                     }
 
                 }catch (e: Exception){
@@ -134,34 +210,4 @@ class LoginPage : AppCompatActivity(){
         }
     }
 
-    // Google Page
-
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
-
-        callbackManager!!.onActivityResult(requestCode,resultCode,data)
-
-        if (requestedOrientation == REQUEST_CODE_SIGN_IN){
-            val account = GoogleSignIn.getSignedInAccountFromIntent(data).result
-            account.let{ // Account check itS null or not
-                googleAuthForFirebase(it) // we are connecting googleSignIn with firebase
-            }
-        }
-    }
-
-    private fun googleAuthForFirebase(account: GoogleSignInAccount){
-        val credentials = GoogleAuthProvider.getCredential(account.idToken,null)
-        CoroutineScope(Dispatchers.IO).launch {
-            try {
-                auth.signInWithCredential(credentials).await()
-                withContext(Dispatchers.Main){
-                    Toast.makeText(this@LoginPage,"Successfully logged in", Toast.LENGTH_SHORT).show()
-                }
-            }catch (e: Exception){
-                withContext(Dispatchers.Main){
-                    Toast.makeText(this@LoginPage,e.message, Toast.LENGTH_SHORT).show()
-                }
-            }
-        }
-    }
 }

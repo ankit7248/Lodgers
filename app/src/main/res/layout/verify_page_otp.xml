@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login">
+
+    <ImageView
+        android:id="@+id/Verify_otp_image"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/verify_otp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Verify_Otp_Textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Verify OTP"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Verify_otp_image" />
+
+    <TextView
+        android:id="@+id/Forget_Password_Description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="47dp"
+        android:paddingRight="47dp"
+        android:text="Please enter 6 digit code sent to your mobile no."
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:textStyle="normal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Verify_Otp_Textview" />
+
+    <!--    <com.google.android.material.card.MaterialCardView-->
+
+    <!--        android:id="@+id/OTp_Input_Number"-->
+    <!--        android:layout_width="40dp"-->
+    <!--        android:layout_height="40dp"-->
+    <!--        android:layout_marginTop="60dp"-->
+    <!--        app:cardCornerRadius="8dp"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/OTp_Input_Number_1"-->
+    <!--        app:layout_constraintHorizontal_bias="0.5"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+
+    <!--        app:layout_constraintTop_toBottomOf="@+id/Forget_Password_Description">-->
+
+    <!--        <com.google.android.material.textfield.TextInputLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:elevation="500dp"-->
+    <!--            app:boxStrokeWidth="0dp"-->
+    <!--            app:boxStrokeWidthFocused="0dp"-->
+    <!--            app:hintEnabled="false"-->
+    <!--            app:passwordToggleTint="@color/black">-->
+
+    <!--            <com.google.android.material.textfield.TextInputEditText-->
+    <!--                android:id="@+id/OTP_Text_Password_1"-->
+    <!--                android:layout_width="40dp"-->
+    <!--                android:layout_height="40dp"-->
+    <!--                android:layout_gravity="center"-->
+    <!--                android:background="@drawable/otp_page"-->
+    <!--                android:elevation="500dp"-->
+    <!--                android:padding="3dp"-->
+    <!--                android:gravity="center"-->
+    <!--                android:inputType="number"-->
+    <!--                android:paddingTop="9dp"-->
+    <!--                android:textColor="@color/black"-->
+    <!--                android:textSize="19dp">-->
+
+    <!--            </com.google.android.material.textfield.TextInputEditText>-->
+    <!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+
+    <!--    </com.google.android.material.card.MaterialCardView>-->
+
+
+    <!--    <com.google.android.material.card.MaterialCardView-->
+
+    <!--        android:id="@+id/OTp_Input_Number_1"-->
+    <!--        android:layout_width="40dp"-->
+    <!--        android:layout_height="40dp"-->
+    <!--        android:layout_marginTop="60dp"-->
+    <!--        app:cardCornerRadius="8dp"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/OTp_Input_Number"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/OTp_Input_Number_2"-->
+    <!--        app:layout_constraintHorizontal_bias="0.5"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/Forget_Password_Description">-->
+
+    <!--        <com.google.android.material.textfield.TextInputLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="54dp"-->
+    <!--            android:elevation="500dp"-->
+    <!--            app:boxStrokeWidth="0dp"-->
+    <!--            app:boxStrokeWidthFocused="0dp"-->
+    <!--            app:hintEnabled="false"-->
+    <!--            app:passwordToggleTint="@color/black">-->
+
+    <!--            <com.google.android.material.textfield.TextInputEditText-->
+    <!--                android:id="@+id/OTP_Text_Password_2"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="40dp"-->
+    <!--                android:layout_gravity="center"-->
+    <!--                android:background="@drawable/otp_page"-->
+    <!--                android:elevation="500dp"-->
+    <!--                android:padding="3dp"-->
+
+    <!--                android:inputType="number"-->
+    <!--                android:paddingTop="9dp"-->
+    <!--                android:textColor="@color/black"-->
+
+    <!--                android:textSize="19dp">-->
+
+    <!--            </com.google.android.material.textfield.TextInputEditText>-->
+    <!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+
+    <!--    </com.google.android.material.card.MaterialCardView>-->
+
+    <!--    <com.google.android.material.card.MaterialCardView-->
+
+    <!--        android:id="@+id/OTp_Input_Number_2"-->
+    <!--        android:layout_width="40dp"-->
+    <!--        android:layout_height="40dp"-->
+    <!--        android:layout_marginTop="60dp"-->
+    <!--        app:cardCornerRadius="8dp"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/OTp_Input_Number_1"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/OTp_Input_Number_3"-->
+    <!--        app:layout_constraintHorizontal_bias="0.5"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/Forget_Password_Description">-->
+
+    <!--        <com.google.android.material.textfield.TextInputLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="54dp"-->
+    <!--            android:elevation="500dp"-->
+    <!--            app:boxStrokeWidth="0dp"-->
+    <!--            app:boxStrokeWidthFocused="0dp"-->
+    <!--            app:hintEnabled="false"-->
+    <!--            app:passwordToggleTint="@color/black">-->
+
+    <!--            <com.google.android.material.textfield.TextInputEditText-->
+    <!--                android:id="@+id/OTP_Text_Password_3"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="40dp"-->
+    <!--                android:background="@drawable/otp_page"-->
+    <!--                android:elevation="500dp"-->
+    <!--                android:layout_gravity="center"-->
+    <!--                android:paddingTop="9dp"-->
+    <!--                android:padding="3dp"-->
+    <!--                android:inputType="number"-->
+    <!--                android:gravity="center"-->
+    <!--                android:textColor="@color/black"-->
+    <!--                android:textSize="19dp">-->
+
+    <!--            </com.google.android.material.textfield.TextInputEditText>-->
+    <!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+
+    <!--    </com.google.android.material.card.MaterialCardView>-->
+
+
+    <!--    <com.google.android.material.card.MaterialCardView-->
+
+    <!--        android:id="@+id/OTp_Input_Number_3"-->
+    <!--        android:layout_width="40dp"-->
+    <!--        android:layout_height="40dp"-->
+    <!--        android:layout_marginTop="60dp"-->
+    <!--        app:cardCornerRadius="8dp"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/OTp_Input_Number_2"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/OTp_Input_Number_4"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/Forget_Password_Description">-->
+
+    <!--        <com.google.android.material.textfield.TextInputLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="54dp"-->
+    <!--            android:elevation="500dp"-->
+    <!--            app:boxStrokeWidth="0dp"-->
+    <!--            app:boxStrokeWidthFocused="0dp"-->
+    <!--            app:hintEnabled="false"-->
+    <!--            app:passwordToggleTint="@color/black">-->
+
+    <!--            <com.google.android.material.textfield.TextInputEditText-->
+    <!--                android:id="@+id/OTP_Text_Password_4"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="40dp"-->
+    <!--                android:layout_gravity="center"-->
+    <!--                android:background="@drawable/otp_page"-->
+    <!--                android:elevation="500dp"-->
+    <!--                android:gravity="center"-->
+    <!--                android:inputType="number"-->
+    <!--                android:padding="3dp"-->
+    <!--                android:paddingTop="9dp"-->
+    <!--                android:textColor="@color/black"-->
+    <!--                android:textColorHint="@color/white"-->
+    <!--                android:textSize="19dp">-->
+
+    <!--            </com.google.android.material.textfield.TextInputEditText>-->
+    <!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+
+    <!--    </com.google.android.material.card.MaterialCardView>-->
+
+    <!--    <com.google.android.material.card.MaterialCardView-->
+
+    <!--        android:id="@+id/OTp_Input_Number_4"-->
+    <!--        android:layout_width="40dp"-->
+    <!--        android:layout_height="40dp"-->
+    <!--        android:layout_marginTop="60dp"-->
+
+    <!--        app:cardCornerRadius="8dp"-->
+
+    <!--        app:layout_constraintStart_toEndOf="@+id/OTp_Input_Number_3"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/OTp_Input_Number_5"-->
+    <!--        app:layout_constraintHorizontal_bias="0.5"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/Forget_Password_Description">-->
+
+    <!--        <com.google.android.material.textfield.TextInputLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="54dp"-->
+    <!--            android:elevation="500dp"-->
+    <!--            app:boxStrokeWidth="0dp"-->
+    <!--            app:boxStrokeWidthFocused="0dp"-->
+    <!--            app:hintEnabled="false"-->
+    <!--            app:passwordToggleTint="@color/black">-->
+
+    <!--            <com.google.android.material.textfield.TextInputEditText-->
+    <!--                android:id="@+id/OTP_Text_Password_5"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="40dp"-->
+    <!--                android:layout_gravity="center"-->
+    <!--                android:background="@drawable/otp_page"-->
+    <!--                android:elevation="500dp"-->
+    <!--                android:gravity="center"-->
+    <!--                android:inputType="number"-->
+    <!--                android:padding="3dp"-->
+    <!--                android:paddingTop="9dp"-->
+    <!--                android:textColor="@color/black"-->
+    <!--                android:textColorHint="@color/white"-->
+    <!--                android:textSize="19dp">-->
+
+    <!--            </com.google.android.material.textfield.TextInputEditText>-->
+    <!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+
+    <!--    </com.google.android.material.card.MaterialCardView>-->
+
+
+    <!--    <com.google.android.material.card.MaterialCardView-->
+
+    <!--        android:id="@+id/OTp_Input_Number_5"-->
+    <!--        android:layout_width="40dp"-->
+    <!--        android:layout_height="40dp"-->
+    <!--        android:layout_marginTop="60dp"-->
+    <!--        app:cardCornerRadius="8dp"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/OTp_Input_Number_4"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.5"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/Forget_Password_Description">-->
+
+    <!--        <com.google.android.material.textfield.TextInputLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="54dp"-->
+    <!--            android:elevation="500dp"-->
+    <!--            app:boxStrokeWidth="0dp"-->
+    <!--            android:background="#B2B2B2"-->
+    <!--            app:boxStrokeWidthFocused="0dp"-->
+    <!--            app:hintEnabled="false"-->
+    <!--            app:passwordToggleTint="@color/black">-->
+
+    <!--            <com.google.android.material.textfield.TextInputEditText-->
+    <!--                android:id="@+id/OTP_Text_Password_6"-->
+    <!--                android:layout_width="40dp"-->
+    <!--                android:layout_height="40dp"-->
+    <!--                android:layout_gravity="center"-->
+    <!--                android:background="@drawable/otp_page"-->
+    <!--                android:elevation="500dp"-->
+    <!--                android:gravity="center"-->
+    <!--                android:inputType="number"-->
+    <!--                android:padding="3dp"-->
+    <!--                android:paddingTop="9dp"-->
+    <!--                android:textColor="@color/black"-->
+    <!--                android:textColorHint="@color/white"-->
+    <!--                android:textSize="19dp">-->
+
+    <!--            </com.google.android.material.textfield.TextInputEditText>-->
+    <!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+
+    <!--    </com.google.android.material.card.MaterialCardView>-->
+
+
+    <LinearLayout
+        android:id="@+id/Otp_Linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/Forget_Password_Description">
+
+        <EditText
+            android:id="@+id/OTP_Text_Password_1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:textStyle="bold">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/OTP_Text_Password_2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="4dp"
+            android:gravity="center_horizontal"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:textStyle="bold">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/OTP_Text_Password_3"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="4dp"
+            android:gravity="center_horizontal"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:textStyle="bold">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/OTP_Text_Password_4"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="4dp"
+            android:gravity="center_horizontal"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:textStyle="bold">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/OTP_Text_Password_5"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="4dp"
+            android:gravity="center_horizontal"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:textStyle="bold">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/OTP_Text_Password_6"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="4dp"
+            android:gravity="center_horizontal"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:textStyle="bold">
+
+        </EditText>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/Receive_Code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
+        android:text="If you don't receive the OTP?"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:layout_marginStart="40dp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toStartOf="@+id/Resend_Otp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Otp_Linear" />
+
+
+    <TextView
+        android:id="@+id/Resend_Otp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="230dp"
+        android:text="@string/resend"
+        android:textAlignment="center"
+        android:textColor="@color/yellow"
+        android:textSize="16dp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Receive_Code"
+        app:layout_constraintTop_toBottomOf="@id/Otp_Linear" />
+
+    <Button
+        android:id="@+id/Verify_Button"
+        style="@style/White_Button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:elevation="500dp"
+        android:text="Verify"
+        app:layout_goneMarginBottom="100dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="358dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="358dp" />
+
+    <ProgressBar
+        android:id="@+id/Otp_ProgressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

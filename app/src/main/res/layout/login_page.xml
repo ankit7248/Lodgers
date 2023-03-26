@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login">
+    android:background="@drawable/login"
+    >
 
     <!--    email address-->
 
@@ -17,22 +20,23 @@
         android:layout_marginTop="15dp"
         android:background="@drawable/edit_text"
         android:hint="Email Address"
-
         android:inputType="textEmailAddress"
         android:maxLength="30"
         android:paddingLeft="11.7dp"
         android:paddingTop="15dp"
         android:paddingBottom="15dp"
+        android:elevation="500dp"
         android:textAlignment="textStart"
         android:textColor="@color/white"
         android:textColorHighlight="@android:color/holo_orange_light"
         android:textColorHint="@color/white"
         android:textSize="18dp"
         app:counterEnabled="true"
-        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
 
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/Glad" />
+        app:layout_constraintTop_toBottomOf="@+id/Glad"
+        tools:layout_editor_absoluteX="59dp" />
 
     <!--    password -->
 
@@ -98,12 +102,9 @@
         app:cardCornerRadius="13dp"
         app:cardElevation="8dp"
         app:cardUseCompatPadding="true"
-        app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/Email_Address"
-
         app:strokeColor="@color/white"
         app:strokeWidth="1dp">
 
@@ -124,6 +125,7 @@
                 android:layout_height="match_parent"
                 android:background="@color/lodgers2"
                 android:hint="Password"
+                android:elevation="500dp"
                 android:inputType="textPassword"
                 android:paddingStart="12dp"
                 android:paddingTop="9dp"
@@ -149,11 +151,10 @@
         android:textColor="@color/black"
         android:textSize="30dp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="209dp" />
 
     <!--Glad-->
 
@@ -166,11 +167,10 @@
         android:text="Glad to see you!"
         android:textColor="@color/black"
         android:textSize="30dp"
-        app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/Welcome" />
+        app:layout_constraintTop_toBottomOf="@+id/Welcome"
+        tools:layout_editor_absoluteX="146dp" />
 
     <!--    Forget password-->
 
@@ -201,13 +201,14 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="40dp"
         android:text="Login"
+        android:elevation="500dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
         android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/Or_Login_with"
-        app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/Forget_Password"
-        app:layout_constraintVertical_bias="0.298" />
+        app:layout_constraintVertical_bias="0.298"
+        tools:layout_editor_absoluteX="59dp" />
 
     <TextView
         android:id="@+id/Or_Login_with"
@@ -216,10 +217,8 @@
         android:layout_marginTop="45dp"
         android:text="Or Login with"
         android:textColor="@color/black"
-        app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/login_2" />
 
     <!--    line1 and line2-->
@@ -231,11 +230,8 @@
         android:layout_marginTop="55dp"
 
         android:background="@color/black"
-        app:layout_constraintHorizontal_bias="0.647"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/Or_Login_with"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-
         app:layout_constraintTop_toBottomOf="@+id/login_2" />
 
     <View
@@ -245,9 +241,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="55dp"
         android:background="@color/black"
-        app:layout_constraintEnd_toStartOf="@+id/guideline2"
 
-        app:layout_constraintHorizontal_bias="0.125"
         app:layout_constraintLeft_toRightOf="@+id/Or_Login_with"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login_2" />
@@ -296,11 +290,10 @@
         android:elevation="500dp"
         app:cardBackgroundColor="@color/white"
         app:cardMaxElevation="12dp"
-        app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@id/Or_Login_with">
+        app:layout_constraintTop_toBottomOf="@id/Or_Login_with"
+        tools:layout_editor_absoluteX="163dp">
 
         <ImageView
             android:layout_width="30dp"
@@ -337,47 +330,32 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:elevation="250dp"
+        android:elevation="500dp"
         android:gravity="center_horizontal"
         android:paddingBottom="10dp"
         android:text="Continue with Facebook"
         android:textStyle="normal"
-        app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/Google" />
+        app:layout_constraintTop_toBottomOf="@+id/Google"
+        tools:layout_editor_absoluteX="168dp" />
 
 
     <TextView
-        android:id="@+id/ContinueAsGuest"
+        android:id="@+id/ContinueAsGuest_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif"
         android:text="@string/continue_as_guest"
         android:textColor="@color/white"
-        android:textSize="18dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="13dp"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login_facebook_button"
-        app:layout_constraintVertical_bias="0.902" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_end="359dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="359dp" />
+        app:layout_constraintVertical_bias="0.902"
+        tools:layout_editor_absoluteX="214dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
