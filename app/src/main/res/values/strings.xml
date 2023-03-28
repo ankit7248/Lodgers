@@ -17,9 +17,17 @@
     <string name="resend">Resend</string>
 
     <string-array name="Genders">
+        <item>None</item>
         <item>Male</item>
         <item>Female</item>
         <item>Lesbian</item>
         <item>Gay</item>
+    </string-array>
+    <string-array name="Country">
+        <item>India</item>
+        <item>England</item>
+        <item>Germany</item>
+        <item>Bhutan</item>
+        <item>Singapore</item>
     </string-array>
 </resources>

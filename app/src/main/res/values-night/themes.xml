@@ -3,7 +3,7 @@
     <style name="Theme.Lodgers" parent="Theme.MaterialComponents.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/white</item>
-        <item name="colorPrimaryVariant">#FFFFFFFF</item>
+        <item name="colorPrimaryVariant">@color/white</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/white</item>

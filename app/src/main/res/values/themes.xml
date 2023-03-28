@@ -4,7 +4,7 @@
         <!-- Primary brand color. -->
 <!--        primary color -> use in button ,text view , app component-->
         <item name="colorPrimary">@color/white</item>
-        <item name="colorPrimaryVariant">#FFFFFFFF</item>
+        <item name="colorPrimaryVariant">@color/white</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
 
@@ -14,6 +14,9 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+    </style>
+    <style name="MyDialogTheme">
+        <item name="backgroundTint">@color/lodgers2</item>
     </style>
 
     <style name="White_Button" parent="Theme.MaterialComponents.NoActionBar">
@@ -35,7 +38,7 @@
         <item name="strokeWidth">2dp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:padding">15dp</item>
-        <item name="elevation">100dp</item>
+        <item name="elevation">500dp</item>
 
     </style>
 
@@ -49,13 +52,22 @@
         <item name="strokeWidth">3dp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:padding">4dp</item>
-        <item name="elevation">100dp</item>
+        <item name="elevation">500dp</item>
 
     </style>
 
     <style name="YourCardView" parent="Widget.MaterialComponents.CardView">
         <item name="cardBackgroundColor">@color/lodgers2
         </item>
+    </style>
+
+    <style name="Spinner" parent="Widget.AppCompat.Light.DropDownItem.Spinner">
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:backgroundTint">#6E5FDE</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
 </resources>

@@ -82,7 +82,6 @@ class LoginPage : AppCompatActivity(){
 
         login_facebook_button.setReadPermissions("email")
         login_facebook_button.setOnClickListener {
-
             FacebookSignIn()
         }
 
