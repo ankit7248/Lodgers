@@ -6,15 +6,49 @@
     android:background="@drawable/login">
 
     <TextView
-        android:id="@+id/Card_new_password"
+        android:id="@+id/Explore_Card_View"
         android:layout_width="match_parent"
-        android:layout_height="600dp"
-        android:background="@drawable/new_password_cardview"
+        android:layout_height="500dp"
+        android:background="@drawable/explore_card_view"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         >
 
     </TextView>
+
+    <TextView
+        android:id="@+id/Explore_Text_View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Explore Your PG, Flat from your Phone"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:elevation="1000dp"
+        android:shadowDx="-100"
+        android:shadowDy="-100"
+        android:textStyle="bold"
+        android:shadowRadius="1"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/Explore_Card_View"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textAlignment="center">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/Explore_Get_Started"
+        style="@style/Purple_Button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="20dp"
+        android:text="Get Started"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

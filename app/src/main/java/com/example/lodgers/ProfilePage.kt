@@ -8,7 +8,7 @@ import android.os.Bundle
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.facebook.Profile
+
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.ktx.storage
@@ -33,9 +33,13 @@ class ProfilePage : AppCompatActivity() {
 //
 //        }
 
+
         Profile_Continue.setOnClickListener {
             val profile = olditems()
             savedatabase(profile)
+
+//            val profile  = ::olditems  store the olditems function in profile variable
+//            savedatabase(profile())
         }
 
 
@@ -50,6 +54,7 @@ class ProfilePage : AppCompatActivity() {
         Delete.setOnClickListener {
             deleteImage("images")
         }
+
 //        Spinner_Gender.onItemClickListener = object : AdapterView.OnItemClickListener
 //        {
 //             fun onNothingSelected(p0: AdapterView<*>?) {
@@ -74,18 +79,18 @@ class ProfilePage : AppCompatActivity() {
             }
         }
     }
-
     private fun savedatabase(profile: Profiledata) = CoroutineScope(Dispatchers.IO).async {
-        try {
-            personCollectionRef.add(profile)
-                .await()   // await -> is use when our data completely completed and its show the result
-            withContext(Dispatchers.Main) {
-                Toast.makeText(this@ProfilePage, "Sucessfully saved data!", Toast.LENGTH_SHORT)
-                    .show()
+        if (olditems() != null){  // Error in this line
+            try {
+                personCollectionRef.add(profile).await()
+                startActivity(Intent(this@ProfilePage,Explore_Pg_Flat::class.java)) // await -> is use when our data completely completed and its show the result
+                withContext(Dispatchers.Main) {
+                    Toast.makeText(this@ProfilePage,"Sucessfully saved data!" , Toast.LENGTH_SHORT)
+                        .show()
+                }
+            } catch (e: Exception) {
+                Toast.makeText(this@ProfilePage, e.message, Toast.LENGTH_SHORT).show()
             }
-        } catch (e: Exception) {
-            Toast.makeText(this@ProfilePage, e.message, Toast.LENGTH_SHORT).show()
-            Toast.makeText(this@ProfilePage, "Image must be in 5 mb", Toast.LENGTH_SHORT).show()
         }
     }
 

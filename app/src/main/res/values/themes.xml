@@ -12,7 +12,6 @@
         <item name="colorSecondaryVariant">@color/white</item>
         <item name="colorOnSecondary">@color/white</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
     <style name="MyDialogTheme">
@@ -56,10 +55,6 @@
 
     </style>
 
-    <style name="YourCardView" parent="Widget.MaterialComponents.CardView">
-        <item name="cardBackgroundColor">@color/lodgers2
-        </item>
-    </style>
 
     <style name="Spinner" parent="Widget.AppCompat.Light.DropDownItem.Spinner">
         <item name="android:paddingStart">0dp</item>
