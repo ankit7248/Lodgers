@@ -19,5 +19,6 @@ class Preferencespage : AppCompatActivity() {
             startActivity(Intent(this@Preferencespage,  ProfilePage::class.java))
         }
 
+
     }
 }

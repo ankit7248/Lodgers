@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_home"
+    app:startDestination="@id/home_page">
+
+    <fragment
+        android:id="@+id/favourite"
+        android:name="com.example.lodgers.Home_page.Favourite"
+        android:label="fragment_favourite"
+        tools:layout="@layout/fragment_favourite" />
+    <fragment
+        android:id="@+id/roomateFinder"
+        android:name="com.example.lodgers.Home_page.RoomateFinder"
+        android:label="RoomateFinder"
+        tools:layout="@layout/home_roommate_finder"/>
+    <fragment
+        android:id="@+id/home_page"
+        android:name="com.example.lodgers.Home_page.Home_main_activity"
+        android:label="home_page"
+        tools:layout="@layout/home_page">
+        <action
+            android:id="@+id/action_home_page_to_home_Profile"
+            app:destination="@id/home_Profile" />
+        <action
+            android:id="@+id/action_home_page_to_roomateFinder"
+            app:destination="@id/roomateFinder" />
+        <action
+            android:id="@+id/action_home_page_to_favourite"
+            app:destination="@id/favourite" />
+    </fragment>
+    <fragment
+        android:id="@+id/home_Profile"
+        android:name="com.example.lodgers.Home_page.Home_Profile"
+        android:label="Home_Profile"
+        tools:layout="@layout/home_profile"/>
+</navigation>

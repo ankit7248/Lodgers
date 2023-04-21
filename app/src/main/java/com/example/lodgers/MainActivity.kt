@@ -2,10 +2,16 @@ package com.example.lodgers
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 
 import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.setupWithNavController
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
 class MainActivity : AppCompatActivity() {
@@ -13,14 +19,13 @@ class MainActivity : AppCompatActivity() {
     lateinit var ContinueAsGuest: TextView
     lateinit var Login: Button
     lateinit var Sign_Up: Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
 //        init()
         //Login page
-
 
         Login = findViewById(R.id.login_1)
         Sign_Up = findViewById(R.id.signUp_Button)

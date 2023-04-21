@@ -33,11 +33,9 @@ class ProfilePage : AppCompatActivity() {
 //
 //        }
 
-
         Profile_Continue.setOnClickListener {
             val profile = olditems()
             savedatabase(profile)
-
 //            val profile  = ::olditems  store the olditems function in profile variable
 //            savedatabase(profile())
         }
