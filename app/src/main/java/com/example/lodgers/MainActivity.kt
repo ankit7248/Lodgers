@@ -2,16 +2,11 @@ package com.example.lodgers
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.ui.setupWithNavController
-import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.example.lodgers.Animation.Preferencespage
 
 
 class MainActivity : AppCompatActivity() {
@@ -55,22 +50,23 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-            Sign_Up.setOnClickListener {
+        Sign_Up.setOnClickListener {
 
-                Intent(this, Sign_up::class.java).also {
-                    startActivity(it)
+            Intent(this, Sign_up::class.java).also {
+                startActivity(it)
 
-                }
             }
+        }
 
-            //Sign Up page
+        //Sign Up page
 
 
-            ContinueAsGuest = findViewById(R.id.ContinueAsGuest)  // Clickable textview
-            ContinueAsGuest.setOnClickListener {
-                startActivity(Intent(this@MainActivity, Preferencespage::class.java))
-            }
+        ContinueAsGuest = findViewById(R.id.ContinueAsGuest)  // Clickable textview
+        ContinueAsGuest.setOnClickListener {
+            startActivity(Intent(this@MainActivity, Preferencespage::class.java))
+        }
     }
+
 }
 
 

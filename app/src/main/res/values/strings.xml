@@ -17,13 +17,14 @@
     <string name="resend">Resend</string>
 
     <string-array name="Genders">
-        <item>None</item>
+        <item>Sex</item>
         <item>Male</item>
         <item>Female</item>
         <item>Lesbian</item>
         <item>Gay</item>
     </string-array>
     <string-array name="Country">
+        <item>Country</item>
         <item>India</item>
         <item>England</item>
         <item>Germany</item>

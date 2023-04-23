@@ -34,7 +34,7 @@
         <activity android:name=".LoginPage">
 
         </activity>
-        <activity android:name=".Preferencespage">
+        <activity android:name=".Animation.Preferencespage">
 
         </activity>
         <activity android:name=".Sign_up">
@@ -52,18 +52,17 @@
 
         </activity>
 
-        <activity android:name=".ProfilePage">
+        <activity android:name=".Preference.ProfilePage">
 
         </activity>
 
-        <activity android:name=".Explore_Pg_Flat">
+        <activity android:name=".Animation.Explore_Pg_Flat">
 
         </activity>
 
-        <activity android:name=".Home_page.Home_main_activity">
+        <activity android:name=".Home_Main.Home_main_activity">
 
-
-    </activity>
+        </activity>
 
 
         <activity

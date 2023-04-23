@@ -7,10 +7,9 @@ import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.lodgers.R
-import com.example.lodgers.databinding.HomePageBinding
-import com.example.lodgers.databinding.HomeProfileBinding
+
 
 class Home_Profile : Fragment(R.layout.home_profile) {
 
 
-    }
+}

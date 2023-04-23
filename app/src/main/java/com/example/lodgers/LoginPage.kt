@@ -9,6 +9,7 @@ import android.widget.TextView
 import android.widget.Toast
 
 import androidx.appcompat.app.AppCompatActivity
+import com.example.lodgers.Animation.Preferencespage
 
 import com.facebook.AccessToken
 

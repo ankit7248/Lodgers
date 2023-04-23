@@ -5,6 +5,6 @@ import androidx.fragment.app.Fragment
 import com.example.lodgers.R
 
 
-class Favourite : Fragment(R.layout.home_favourites) {
+class Favourite : Fragment(R.layout.fragment_favourite) {
 
 }
