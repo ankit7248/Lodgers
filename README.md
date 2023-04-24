@@ -146,4 +146,11 @@ Send notifications with Cloud Messaging.
 
 Find out when and why your app is crashing with Crashlytics.
 
+<hr> 
 <h1> Home Page </h1> 
+
+<h2>1. NavGraph </h2>
+<h2>2. Fragments </h2>
+<h2>3. Menu Bar Navigation </h2>
+
+
