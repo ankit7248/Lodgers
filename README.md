@@ -149,8 +149,16 @@ Find out when and why your app is crashing with Crashlytics.
 <hr> 
 <h1> Home Page </h1> 
 
+Depemedecy Used of : - 
 <h2>1. NavGraph </h2>
 <h2>2. Fragments </h2>
 <h2>3. Menu Bar Navigation </h2>
+
+<hr>
+
+<h2> Home Page -> </h2>
+<p> 1. Put in Search View ->  to find the location of flat where user want </p>
+<p> 2. Recommend -> Recommend of flat or Pg , by the given location </p> 
+<p> 3. Near You -> Near you give the flat or Pg's , which location user want to take nearby flat or pg </p>
 
 
