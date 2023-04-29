@@ -160,5 +160,6 @@ Depemedecy Used of : -
 <p> 1. Put in Search View ->  to find the location of flat where user want </p>
 <p> 2. Recommend -> Recommend of flat or Pg , by the given location </p> 
 <p> 3. Near You -> Near you give the flat or Pg's , which location user want to take nearby flat or pg </p>
+<p> 4. Browse by Locality -> it gives you a Flat | Pg's in a particular places </p>
 
 
