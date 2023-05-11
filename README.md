@@ -157,10 +157,14 @@ Find out when and why your app is crashing with Crashlytics.
 <h2>3. Menu Bar Navigation </h3>
 
 <h2> Home Page(XML) -> </h2>
-<p> 1. Put in Search View ->  to find the location of flat where user want </p>
+<p> 1. Search View ->  to find the location of flat where user want </p>
 <p> 2. Recommend -> Recommend of flat or Pg , by the given location </p> 
 <p> 3. Near You -> Near you give the flat or Pg's , which location user want to take nearby flat or pg </p>
 <p> 4. Browse by Locality -> it gives you a Flat | Pg's in a particular places </p>
+    
+<h2> Home Page(Backend) -> </h2>
+<p> 1. Create Api  ->  Create the data of Recommend Section by Using (Node.js, Express.js, Mongodb Atlas(realm)</p>   
+    
 
 
 
