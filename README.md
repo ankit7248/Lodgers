@@ -170,47 +170,39 @@ Find out when and why your app is crashing with Crashlytics.
 
 
 <h1> Prototype </h1>
-<h2> Login Page and Sign up Page and Forget Password Page </h2>
+<h1> Login Page and Sign up Page and Forget Password Page </h1>
 
-![image](https://github.com/ankit7248/Lodgers/assets/101561408/39b1e12d-760f-4b45-a40d-40f98e716b73)
+![Login (1)](https://github.com/ankit7248/Lodgers/assets/101561408/311d432e-d8f6-449f-a057-decc312d9b06)  ![1](https://github.com/ankit7248/Lodgers/assets/101561408/45fa040a-3f54-48e9-ab50-9f0a7c1ad488)  ![Sign Up](https://github.com/ankit7248/Lodgers/assets/101561408/a50b59fa-91a7-4012-a62f-4c05940732a6)  ![Sign Up](https://github.com/ankit7248/Lodgers/assets/101561408/13d14b29-ec22-43ce-bccb-e633fd71cf5d)
+![Forget Password](https://github.com/ankit7248/Lodgers/assets/101561408/d0b979a9-b9e7-42df-9fa3-aa5af20a5e18) ![4](https://github.com/ankit7248/Lodgers/assets/101561408/f065668e-be53-467b-9a84-d214d597925e)  ![5](https://github.com/ankit7248/Lodgers/assets/101561408/48ac30da-a531-4d91-b130-9f1f305a1cbb) ![Home](https://github.com/ankit7248/Lodgers/assets/101561408/24556f2c-d3ee-4423-a883-0c8f83edc96d) 
 
-![image](https://github.com/ankit7248/Lodgers/assets/101561408/b5a36e69-be0f-4812-9a25-6690a55c2521)
 
-![image](https://github.com/ankit7248/Lodgers/assets/101561408/6618212f-cfb3-4ec0-a0cc-83d4edfb656d)
 
-![image](https://github.com/ankit7248/Lodgers/assets/101561408/e7f8bf02-921e-4bd3-a3f5-074534d16de6)
+<h1> Preference Page </h1>
 
-![image](https://github.com/ankit7248/Lodgers/assets/101561408/cff99142-62f0-408c-999d-0238367d7457)
+![Prefernce](https://github.com/ankit7248/Lodgers/assets/101561408/f3b6b180-756e-4cfb-98f6-1fa48fa73ef8)
 
-![image](https://github.com/ankit7248/Lodgers/assets/101561408/16945379-81bf-44f8-858c-f384d6f1927a)
 
-<h2> Preference Page </h2>
+<h1> Home Page </h1>
 
-![image](https://github.com/ankit7248/Lodgers/assets/101561408/3eec09da-7d00-4be6-835a-186b2d6dc453)
+ ![image](https://github.com/ankit7248/Lodgers/assets/101561408/f360292c-d138-4939-9128-655ec8ac747f)
 
-<h2> Home Page </h2>
 
-![image](https://github.com/ankit7248/Lodgers/assets/101561408/80486a47-b1cc-4456-9ba4-3e86178b0363) 
+<h1> Recommend Page </h1>
 
-![image](https://github.com/ankit7248/Lodgers/assets/101561408/3283bc8c-f1e3-4039-9c2a-9412feb503d6)
+![image](https://github.com/ankit7248/Lodgers/assets/101561408/6ce8e569-412a-49b1-a5d4-797b91ffee96)
 
-<h2> Recommend Page </h2>
 
-![image](https://github.com/ankit7248/Lodgers/assets/101561408/59631620-8346-42cf-929d-34c4a24a1d12)
+<h1> Near You Page </h1>
 
-<h2> Near You Page </h2>
+![image](https://github.com/ankit7248/Lodgers/assets/101561408/802330e8-01ec-45df-93f6-12f75692c870)
 
-![image](https://github.com/ankit7248/Lodgers/assets/101561408/76431c25-fc08-41e4-a31f-87d4c3ba45fe)
 
-<h2> Favourites Page </h2>
+<h1> Favourites Page </h1>
 
-![image](https://github.com/ankit7248/Lodgers/assets/101561408/72fc6f03-e2c5-49fb-8862-8a71ff1fe7bb)
+![image](https://github.com/ankit7248/Lodgers/assets/101561408/5197b7b5-d8de-4cd3-800f-61a026ce4683)  ![image](https://github.com/ankit7248/Lodgers/assets/101561408/0eb7e248-075a-47b6-ab3e-1e961282de46)
 
-![image](https://github.com/ankit7248/Lodgers/assets/101561408/93f078d9-2ff0-4fdf-a592-82cfc848848f)
+![image](https://github.com/ankit7248/Lodgers/assets/101561408/71243a0c-8508-4e30-8a10-7fde0f2381e3)  ![image](https://github.com/ankit7248/Lodgers/assets/101561408/79e25d08-c923-49b6-8f8e-8737822a285b)
 
-![image](https://github.com/ankit7248/Lodgers/assets/101561408/1ed69930-9d98-423b-b385-4086d9fffda9)
-
-![image](https://github.com/ankit7248/Lodgers/assets/101561408/b775d629-25e7-478f-a567-4efef90fa423)
 
  
 
