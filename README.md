@@ -169,5 +169,84 @@ Find out when and why your app is crashing with Crashlytics.
 
 
 
+<h1> Prototype </h1>
+<h2> Login Page and Sign up Page and Forget Password Page </h2>
+
+![image](https://github.com/ankit7248/Lodgers/assets/101561408/39b1e12d-760f-4b45-a40d-40f98e716b73)
+
+![image](https://github.com/ankit7248/Lodgers/assets/101561408/b5a36e69-be0f-4812-9a25-6690a55c2521)
+
+![image](https://github.com/ankit7248/Lodgers/assets/101561408/6618212f-cfb3-4ec0-a0cc-83d4edfb656d)
+
+![image](https://github.com/ankit7248/Lodgers/assets/101561408/e7f8bf02-921e-4bd3-a3f5-074534d16de6)
+
+![image](https://github.com/ankit7248/Lodgers/assets/101561408/cff99142-62f0-408c-999d-0238367d7457)
+
+![image](https://github.com/ankit7248/Lodgers/assets/101561408/16945379-81bf-44f8-858c-f384d6f1927a)
+
+<h2> Preference Page </h2>
+
+![image](https://github.com/ankit7248/Lodgers/assets/101561408/3eec09da-7d00-4be6-835a-186b2d6dc453)
+
+<h2> Home Page </h2>
+
+![image](https://github.com/ankit7248/Lodgers/assets/101561408/80486a47-b1cc-4456-9ba4-3e86178b0363) 
+
+![image](https://github.com/ankit7248/Lodgers/assets/101561408/3283bc8c-f1e3-4039-9c2a-9412feb503d6)
+
+<h2> Recommend Page </h2>
+
+![image](https://github.com/ankit7248/Lodgers/assets/101561408/59631620-8346-42cf-929d-34c4a24a1d12)
+
+<h2> Near You Page </h2>
+
+![image](https://github.com/ankit7248/Lodgers/assets/101561408/76431c25-fc08-41e4-a31f-87d4c3ba45fe)
+
+<h2> Favourites Page </h2>
+
+![image](https://github.com/ankit7248/Lodgers/assets/101561408/72fc6f03-e2c5-49fb-8862-8a71ff1fe7bb)
+
+![image](https://github.com/ankit7248/Lodgers/assets/101561408/93f078d9-2ff0-4fdf-a592-82cfc848848f)
+
+![image](https://github.com/ankit7248/Lodgers/assets/101561408/1ed69930-9d98-423b-b385-4086d9fffda9)
+
+![image](https://github.com/ankit7248/Lodgers/assets/101561408/b775d629-25e7-478f-a567-4efef90fa423)
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
